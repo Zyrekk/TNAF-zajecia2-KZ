@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form method="post">
+        <div class="container">
+            <div class="mainBox">
+                <h1 style="font-weight: bold;">Employment Form</h1>
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="fname" class="labelfontsize">First Name</label>
+                        <input type="text" class="input2" id="fname" placeholder="  Jan" required>
+                    </div>
+                    <div class="columnbox">
+                        <label for="fname" class="labelfontsize">Last Name</label>
+                        <input type="text" class="input2" id="lname" placeholder="  Kowalski" required>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="email" class="labelfontsize"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">E-mail</label>
+                        <input type="text" class="input3" id="email" placeholder="  jk@gmail.com" required>
+                    </div>
+                    <div class="columnbox">
+                        <label for="phone" class="labelfontsize">Phone</label>
+                        <input type="tel" class="input3" id="phone" placeholder="505 505 505"
+                            pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+                    </div>
+                    <div class="columnbox">
+                        <label for="birth" class="labelfontsize">Date of birth</label>
+                        <input type="date" class="input3" id="birth" required>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="gender" class="labelfontsize">Gender</label>
+                        <select class="input1" id="gender" required>
+                            <option></option>
+                            <option value="volvo">Male</option>
+                            <option value="saab">Female</option>
+                            <option value="mercedes">:)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="lookingfor" class="labelfontsize">What are you looking for</label>
+                        <div class="rowradio" id="lookingfor">
+                            <div class="m1">
+                                <input type="radio" id="1" name="job" value="Software Engineer">
+                                <label for="1">Software Engineer</label>
+                            </div>
+                            <div class="m1">
+                                <input type="radio" id="2" name="job" value="UX Designer">
+                                <label for="2">UX Designer</label>
+                            </div>
+                            <div class="m1">
+                                <input type="radio" id="3" name="job" value="Analytics Specialist">
+                                <label for="3">Analytics Specialist</label>
+                            </div>
+                            <div class="m1">
+                                <input type="radio" id="4" name="job" value="Project Manager">
+                                <label for="4">Project Manager</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="Which programming language do you know" class="labelfontsize">Which programming
+                            language do you know</label>
+                        <div class="rowcheck" id="Which programming language do you know">
+                            <div class="m1">
+                                <input type="checkbox" id="5" name="language1" value="Java">
+                                <label for="5">Java</label>
+                            </div>
+
+                            <div class="m1">
+                                <input type="checkbox" id="6" name="language2" value="Javascript">
+                                <label for="6">Javascript</label>
+                            </div>
+
+                            <div class="m1">
+                                <input type="checkbox" id="7" name="language3" value="C#">
+                                <label for="7">C#</label>
+                            </div>
+
+                            <div class="m1">
+                                <input type="checkbox" id="8" name="language4" value="Kotlin">
+                                <label for="8">Kotlin</label>
+                            </div>
+
+                            <div class="m1">
+                                <input type="checkbox" id="9" name="language4" value="Python">
+                                <label for="9">Python</label>
+                            </div>
+
+                            <div class="m1">
+                                <input type="checkbox" id="10" name="language4" value="Scala">
+                                <label for="10">Scala</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columnbox">
+                        <label for="mess" class="labelfontsize">Message</label>
+                        <textarea class="message" id="mess" placeholder="  Type your message"></textarea>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <input type="reset" class="przycisk1" value="Reset"></button>
+                    <input type="submit" class="przycisk2" value="Submit"></button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
